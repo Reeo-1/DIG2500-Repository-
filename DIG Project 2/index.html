@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting Game Main Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page">
+
+    <section class="intro">
+
+         <img src="logo.png" alt="Game Logo" class="logo">
+
+        <h1>X Fighting Game</h1>
+
+        <p>
+            Select a game mode below to play immediately,
+            practice your skills, or explore extra content.
+        </p>
+
+    </section>
+
+    <div class="menu-container">
+
+        <nav class="menu">
+
+            <h2>Main Menu</h2>
+
+            <ul>
+
+                <li class="active"
+                    data-info="Fight through multiple opponents and become the God of Arcade Mode.">
+                    Arcade
+                </li>
+
+                <li
+                    data-info="View unlocked artwork, character skins, music, and other collectibles.">
+                    Gallery
+                </li>
+
+                <li
+                    data-info="Practice combos, movement, and learn the game's mechanics.">
+                    Training / Tutorial
+                </li>
+
+                <li
+                    data-info="Adjust audio, controls, graphics, and gameplay settings.">
+                    Options
+                </li>
+
+                <li
+                    data-info="Return to the game's title screen.">
+                    Return to Title Screen
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <section class="info">
+
+            <h2>Tips / Info</h2>
+
+            <p id="description">
+                Fight through multiple opponents and become the God of Arcade Mode.
+            </p>
+
+            <button class="start-btn">
+                Select
+            </button>
+
+        </section>
+
+    </div>
+
+    <footer>
+
+        <p>
+            © 2026 Rio Fercilien | Responsive Code Interface Project
+        </p>
+
+    </footer>
+
+</div>
+
+<script>
+
+const items = document.querySelectorAll(".menu li");
+const description = document.getElementById("description");
+
+items.forEach(item => {
+
+    item.addEventListener("mouseenter", () => {
+
+        items.forEach(i => i.classList.remove("active"));
+
+        item.classList.add("active");
+
+        description.textContent = item.dataset.info;
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
