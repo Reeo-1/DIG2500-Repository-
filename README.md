@@ -1,6 +1,6 @@
 # X Fighting Game Main Menu
 
-## Project Description
+# Project Description
 This project is a fighting game main menu interface created using HTML and CSS. The interface features a vertical navigation menu with options such as Arcade, Gallery, Training/Tutorial, Options, and Return to Title Screen. An information panel on the right updates automatically when the user hovers over different menu options, providing a simple interactive experience. The design uses a dark color scheme with red highlights to resemble the menus commonly found in modern fighting games.
 
 ## Intended User or Player
@@ -12,7 +12,7 @@ The player should be able to:
 - Read helpful descriptions for each menu selection.
 - Quickly understand what each game mode offers before making a selection.
 - Experience a clean and organized interface similar to those found in commercial fighting games.
-
+- 
 ## Inspiration Interfaces
 - Street Fighter 6 – Inspired the dark theme, bold red accents, and simple menu layout with a large information panel.
 - Tekken 8 – Influenced the clean vertical navigation and focus on readability.
