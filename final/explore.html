@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trailblazing Starward</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>
+        <a href="index.html">Trailblazing Starward</a>
+    </h1>
+
+</header>
+
+<section id="planets">
+
+    <h2>Choose a Planet to Explore</h2>
+
+    <div class="planet-container">
+
+        <div class="planet-card">
+
+            <img src="images/Magmar.jpg" alt="Magmar">
+
+            <h3>Magmar</h3>
+
+            <p>A volcanic planet with blazing lava oceans.</p>
+
+            <button
+                class="planet-btn"
+                data-name="Magmar"
+                data-description="Magmar is an active volcanic world filled with rivers of lava, towering obsidian cliffs, and constant eruptions. Despite the extreme temperatures, unique alien organisms have adapted to survive in its molten environment.">
+                Destination Magmar
+            </button>
+
+        </div>
+
+        <div class="planet-card">
+
+            <img src="images/IX.jpg" alt="IX">
+
+            <h3>IX</h3>
+
+            <p>A black moon where light is absorbed constantly</p>
+
+            <button
+                class="planet-btn"
+                data-name="IX"
+                data-description="IX is a moon planet covered in a vantablack color. Gravity warps in it's presence and time passes by inexplicably.">
+                Destination IX
+            </button>
+
+        </div>
+
+        <div class="planet-card">
+
+            <img src="images/Ishtarin.jpg" alt="Ishtarin">
+
+            <h3>Ishtarin</h3>
+
+            <p>A lovely desert world.</p>
+
+            <button
+                class="planet-btn"
+                data-name="Ishtarin"
+                data-description="Ishtarin is a warm desert planet known for its endless dunes and mysterious gems that form in the sand.">
+                Destination Ishtarin
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="mission">
+
+    <h2>Mission Log</h2>
+
+    <p>
+        As a member of the Interstellar Peace Corporation, your mission is to
+        investigate newly discovered planets and document your findings for
+        future explorers.
+    </p>
+
+</section>
+
+<div id="planetModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
